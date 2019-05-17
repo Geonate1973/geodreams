@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Basicos*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/* margin-bottom: 20px; */
+}
+
+form{
+	margin-bottom:200px;
+}
+.etiqueta{
+	font-weight: bold;
+}
+
+form>p {
+	font-weight:bold;
+}
+
+.sincheck{
+	display:block;
+	width:700px;;
+	height: 30px;
+	margin-bottom: 20px;
+	
+}
+.checkbox {
+	font-size: 18px;
+	margin-right: 20px;}
+.checkbox2{
+
+}
+
+
+textarea{
+	display: block;
+	width:700px;
+	height: 150px;
+}
+
+.boton{
+	width:200px;
+	height: 60px;
+
+}
+	
+body {
+	background-color:#fff;
+	padding-top: 65px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+header {
+	background: #000;
+	position:fixed;
+	width:100%;
+	top: 0;
+	margin-bottom: 8px;
+}
+
+h1{
+	font-family: 'Allura', cursive;
+	font-size: 3em;
+	margin-top:20px;
+}
+
+h2 {
+	font-family: 'Abel', sans-serif;
+	margin-top:20px;
+	margin-bottom: 10px;
+}
+
+p{
+	margin-bottom: 10px;
+}
+
+.banner {
+	width:100%;
+}
+
+.banner img{
+	width:100%;
+}
+.menu {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu .logo{
+	display: inline-block;
+	margin-right: 1em;
+	padding: 10px 0;
+
+}
+
+.menu .logo img {
+	vertical-align: top;
+	height: 50px;
+}
+
+.menu .btn-menu {
+	display: none;
+	color: white;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.menu .enlaces {
+	display: inline-block;
+	text-align: right;
+}
+
+.menu .enlaces a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 01em;
+	text-align: center;
+	font-size: 1em;
+	font-family: arial;
+	
+}
+
+.menu .enlaces i {
+	margin-right: 5px;
+}
+
+.menu .enlaces a:hover {
+	background: #f2f2f2;
+	color:#4357ad;
+}
+
+
+
+.foto-index{
+	width:100%;
+	
+}
+
+.foto-index img{
+	width:100%;
+}
+
+main {
+	width:90%;
+	max-width: 1000px;
+	margin:0 auto;
+	background: #fff;
+	padding: 20px;
+}
+
+main article h1 {
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+main article hr {
+	margin-bottom: 1em;
+	height: 2px;
+	background: #4357ad;
+	border:none;
+}
+
+.headroom {
+	transition: transform .3s ease;
+	z-index: 10;
+}
+
+.headroom--pinned {
+	transform: translateY(0%);
+}
+
+.headroom--unpinned {
+	transform: translateY(-30%);
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+.contenedor-web {
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contenedor_portafolio {
+	margin-bottom: 35px;
+	text-align: center;
+	
+}
+
+.contenedor_portafolio img{
+	border-radius: 50%;
+	width:200px;
+	height: 200px;
+	
+		-webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+}
+
+/* CAJAS DE FOTOS DE PORTAFOLIO WEB */
+.contenedor-web {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.contenedor_portafolio {
+	margin-bottom: 35px;
+	text-align: center;
+}
+.contenedor_portafolio img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	-webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+	opacity: 0.5;
+	transition: 0.5s all ease;
+}
+
+.contenedor_portafolio img:hover {
+	opacity: 1;
+}
+
+
+.contenedor_videos {
+		display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.caja_video {
+	width: 250px;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+
+/*Media QUeris*/
+@media screen and (max-width:700px){
+	header .menu {
+		flex-direction: column;
+		
+	}
+	
+	header .menu .logo {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		/* padding: 0.5em; */
+	}
+	
+	header .menu .logo .btn-menu {
+		display: inline-block;
+	}
+	
+	header .menu .enlaces{
+		width: 100%;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	
+
+	main{
+		width:100%;
+		padding: 9px;
+	}
+
+
+	.caja_video{
+		width: 90%;
+		margin: auto;
+	}
+
+	.banner{
+		margin-top: 9px;
+	}
+	iframe{
+		width:100%;
+		
+	}
+
+	.sliderfoto, .sliderweb{
+		margin-top:10px;
+	}
+
+	article.cuerpo {
+		padding: 9px;
+	}
+}
+
+
+
+
+
+
+
