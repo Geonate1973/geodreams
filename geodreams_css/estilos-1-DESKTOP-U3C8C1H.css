@@ -30,9 +30,7 @@ form>p {
 .checkbox {
 	font-size: 18px;
 	margin-right: 20px;}
-.checkbox2{
 
-}
 
 
 textarea{
@@ -58,6 +56,7 @@ header {
 	position:fixed;
 	width:100%;
 	top: 0;
+	margin-bottom: 8px;
 }
 
 h1{
@@ -230,14 +229,10 @@ box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
 	opacity: 1;
 }
 
-article>h2 {
-	display: inline-block;
-	
-}
 
 .contenedor_videos {
-	display: flex;
-	justify-content:space-evenly;
+		display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -245,29 +240,14 @@ article>h2 {
 	width: 250px;
 	margin-bottom: 35px;
 	text-align: center;
-	padding-bottom:4px;
-	padding-left:4px;
-	padding-right: 4px;
-	border: 0.5px solid black;
 }
-
-
-.contacto{
-	margin-top:10px;
-	background-color:#232020;
-	width: 100%;
-	padding: 10px;
-	color:white;
-	text-align: center;
-}
-
-
 
 
 /*Media QUeris*/
 @media screen and (max-width:700px){
 	header .menu {
 		flex-direction: column;
+		
 	}
 	
 	header .menu .logo {
@@ -275,7 +255,7 @@ article>h2 {
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
-		/* padding: 1em; */
+		/* padding: 0.5em; */
 	}
 	
 	header .menu .logo .btn-menu {
@@ -291,16 +271,32 @@ article>h2 {
 		justify-content: space-around;
 	}
 	
-}
+
+	main{
+		width:100%;
+		padding: 9px;
+	}
 
 
-/*Media QUeris*/
-@media screen and (max-width:390px){
+	.caja_video{
+		width: 90%;
+		margin: auto;
+	}
 
-	.contenedor_portafolio{
-		width:200px;
-		margin:auto;
-		margin-bottom: 100px;
+	.banner{
+		margin-top: 9px;
+	}
+	iframe{
+		width:100%;
+		
+	}
+
+	.sliderfoto, .sliderweb{
+		margin-top:10px;
+	}
+
+	article.cuerpo {
+		padding: 9px;
 	}
 }
 
