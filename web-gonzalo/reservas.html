@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Copasu | Puerto Maldondo | Habitaciones | Cuartos</title>
+
+    <script src="https://kit.fontawesome.com/886ebdd1bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilosMaster.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+        <!-- codigo para animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- codigo para recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- fin de codigo para recaptcha -->
+</head>
+
+<body>
+
+
+        <header>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span><i class="fas fa-bars"></i></span>Menu</a> 
+             </div> 
+            <div class="contenedor-menu animated fadeInDown delay-1s">
+                <ul class="menu">
+                  <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                  <li><a href="simple.html"><i class="fas fa-bed"></i> </i> Simple</a></li>
+                  <li><a href="doble.html"><i class="fas fa-bed"></i> </i> Doble</a></li>
+                  <li><a href="triple.html"><i class="fas fa-bed"></i> </i> Triple</a></li>
+                  <li><a href="matrimonial.html"><i class="fas fa-bed"></i> </i> Matrimonial</a></li>
+                  <li><a href="clientes.html"><i class="fas fa-male"></i> Nuestros Clientes</a></li>
+                  <li><a href="contactanos.html"><i class="fas fa-id-card-alt"></i> Contáctanos</a></li>
+              </ul>
+  
+          </div>
+
+            <div class="contenedorFotoIndexS">
+                <img src="img/bannerReservas.jpg" alt="">
+            </div>
+
+        </header>
+        <div class="contenedorMaster">
+        <div class="contenedorIndexReserva">
+            <h2 class="titulo1">CHECK AVAILBILITY</h2>
+            <div class="titulo">Haz tu Reserva!</div>
+            <p>Luego de hacer el proceso de reserva por nuestra web, nos estaremos comunicando al numero de celular registrado para completar el proceso de reserva de habitación. Gracias por confiar en nosotros para tu estadía.</p> <br><br>
+
+            <div class="contenedorForm">
+                <div class="cajaFotoForm">
+                    <img src="img/fotoForm.jpg" alt="">
+                </div>
+                <div class="cajaForm">
+                    <form action="php/recaptcha-control.php" method="post">
+                    
+                        <div class="plataformaForm">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" name="nombre" required placeholder="Nombre Completo">
+                        </div class="plataformaForm">
+                        <div class="plataformaForm">
+                            <label for="nombre">Celular</label>
+                            <input type="number" name="celular" required placeholder="Ingresa tu numero">
+                        </div class="plataformaForm">
+                        <div class="plataformaForm">
+                            <label for="nombre">Email</label>
+                            <input type="email" name="email" required placeholder="Ingresa tu email">
+                        </div class="plataformaForm">
+                    
+                        <div class="plataformaForm">
+                            <label for="checkin">CHECKIN</label>
+                            <input type="date" name="checkin" required>
+                        </div class="plataformaForm">
+                    
+                        <div class="plataformaForm">
+                            <label for="checkout">CHECKOUT</label>
+                            <input type="date" name="checkout" required>
+                        </div class="plataformaForm">
+                    
+<div class="plataformaForm">
+                            <label for="adultos">ADULTOS</label>
+                            <select name="adultos" >
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+</div class="plataformaForm">
+                    
+<div class="plataformaForm">
+                            <label for="ninos">NIÑOS</label>
+                            <select name="ninos">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+</div class="plataformaForm">
+                    
+<div class="plataformaForm">
+                            <label for="habitacion">HABITACIÓN</label>
+                            <select name="habitacion" >
+                                <option>Simple</option>
+                                <option>Doble</option>
+                                <option>Triple</option>
+                                <option>Matrimonial</option>
+                            </select>
+</div class="plataformaForm">
+                    
+
+                        <!-- <input class="boton" type="submit" value="Enviar"> -->
+                        <button type="submit" class="boton">Enviar formulario</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="linea"></div>
+
+    </div>
+
+    <!-- link para el menu celular -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menu.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/animacion.js"></script>
+
+    <script src="js/lightbox.min.js"></script>
+</body>
+
+</html>

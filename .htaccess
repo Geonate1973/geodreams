@@ -1,0 +1,13 @@
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW SSL_REDIRECT:geodreamspro.com
+# RewriteEngine on
+# RewriteCond %{HTTPS} off
+# RewriteCond %{HTTP_HOST} ^geodreamspro.com$
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE SSL_REDIRECT:geodreamspro.com
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} geodreamspro\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.geodreamspro.com/$1 [R,L]

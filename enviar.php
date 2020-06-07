@@ -1,10 +1,10 @@
 <?php
 	
 	// Datos de la base de datos 
-	$usuario = "geonate"; //usuario de la base de datos que se creo en el cpanel (no phpmyadmin)
+	$usuario = "u286313822_geodreamsgeo"; //usuario de la base de datos que se creo en el cpanel (no phpmyadmin)
 	$password = "G24rw3ng"; // password q tambien se crea en el cpanel
 	$servidor = "localhost"; // servidor tanto en pc como en godaddy es localhost
-	$basededatos = "geodreams_cv"; // nombre de la base de datos que contendra las tablas, ambas se crean en phpmyadmin
+	$basededatos = "u286313822_geodreams"; // nombre de la base de datos que contendra las tablas, ambas se crean en phpmyadmin
 
 
 	// sentencia para conectar con servidor y base de datos

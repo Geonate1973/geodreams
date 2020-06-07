@@ -1,0 +1,18 @@
+.circulo {
+  background-image: url("https://picsum.photos/50");
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+.triangulo{
+  background-image: url("https://picsum.photos/50");
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+.cuadrado{
+  background-image: url("https://picsum.photos/50");
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+}

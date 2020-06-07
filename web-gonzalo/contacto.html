@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- QUERY PARA GOOGLE RECAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- fin QUERY PARA GOOGLE RECAPTCHA -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+
+
+    <script src="js/slider/jquery-3.1.0.min.js"></script>
+    <script src="js/slider/jquery.flexslider.js"></script>
+    <script src="js/slider/main.js"></script>
+
+    <script src="https://kit.fontawesome.com/17c3bf4af0.js" crossorigin="anonymous"></script>
+
+    <title>Argal Ingenieros Constructores Edificios </title>
+
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input[type=checkbox]').live('click', function () {
+                var parent = $(this).parent().attr('id');
+                $('#' + parent + ' input[type=checkbox]').removeAttr('checked');
+                $(this).attr('checked', 'checked');
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <h2>Comunícate con Nosotros</h2><br>
+    <div class="cajaFormulario">
+        <form action="php/enviar.php" method="post">
+
+            <label for="nombre"> Nombre Completo:</label>
+            <input type="text" name="nombre2" placeholder="Escribe tu nombre completo aquí">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <br>
+            <label for="consulta">Consulta:</label>
+            <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+
+            <p>correo</p><input type="email" name="correo">
+            <h3>Producto 1</h3>
+            <div id="product1">
+                <input type="checkbox" value="Cod: 2356 Zapallo" id="product-1-1" name="check" /><img
+                    src="img/zapallo.jpg" alt="zapallo"> Zapallo <label for="cantidad">Cantidad</label>
+                    <select name="cantidadSelect">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select> <label for="manual">Cantidad Manual</label><input type="text" name="cantidadManual">
+                Unidad(es)<br />
+                <input type="checkbox" value="Cod: 23er56 Manzana" id="product-1-2" name="check" /><img
+                    src="img/manzana.jpg" alt="Manzana"> Manzana<label for="cantidad">Cantidad</label> <select
+                    name="cantidadSelect2">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    
+                </select> <label for="manual">Cantidad Manual</label><input type="text" name="cantidadManual2">
+                Unidad(es)<br />
+                <input type="checkbox" value="Cod: qwdq2356 Melon" id="product-1-3" name="check" /><img
+                    src="img/melon.jpg" alt="Melon"> Melon<label for="cantidad">Cantidad</label> <select
+                    name="cantidadSelect3">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select> <label for="manual">Cantidad Manual</label><input type="text" name="cantidadManual3">
+                Unidad(es)<br />
+            </div>
+
+<br><br><br>
+            <label for="">LECHE </label> 
+            <select name="leche" id="">
+                <option><a href="img/manzana.jpg"></a> La Prefer Choco Sin Lactosa x 500gr cod: 0901</option>
+
+                <option> La Preferiada UHT 800 ml cod: 222</option>
+
+                <option>Leche Entera Laive 900 ml cod: 2129</option>
+            </select>
+
+            <label for="">Cantidad</label> <input type="text" name="" id="">
+
+                <br><br><br>
+
+            <h3>Producto 2</h3>
+            <div id="product2">
+                <input type="checkbox" value="Cod: qwdq2356 Leche" id="product-2-1" name="check2" /> <img
+                    src="img/leche.jpg" alt="Melon">Leche<br />
+                <input type="checkbox" value="Cod: qwdq2356 Lechón" id="product-2-2" name="check2" /><img
+                    src="img/lechon.jpg" alt="Lechón"> Lechón<br />
+                <input type="checkbox" value="Cod: qwdq2356 Chorizo" id="product-2-3" name="check2" /> <img
+                    src="img/chorizo.jpg" alt="Chorizo">Chorizo<br />
+            </div>
+            <h3>Producto 3</h3>
+            <div id="product3">
+                <input type="checkbox" value="Cod. 234 Gaseosa" id="product-3-1" name="check3" /> <img
+                    src="img/gaseosa.jpg" alt="Gaseosa">Gaseosa<br />
+                <input type="checkbox" value="Cod: 804325 Mostaza" id="product-3-2" name="check3" /><img
+                    src="img/mostaza.jpg" alt="Mostaza"> Mostaza<br />
+                <input type="checkbox" value="Cod: 023459 Chicharron" id="product-3-3" name="check3" /><img
+                    src="img/chicharron.jpg" alt="Chicharron"> Chicharron<br />
+            </div>
+
+
+            <br>
+
+
+            <input type="submit" value="Enviar">
+        </form>
+
+
+    </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

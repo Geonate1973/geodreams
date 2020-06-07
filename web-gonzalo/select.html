@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- QUERY PARA GOOGLE RECAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- fin QUERY PARA GOOGLE RECAPTCHA -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+
+
+    <script src="js/slider/jquery-3.1.0.min.js"></script>
+    <script src="js/slider/jquery.flexslider.js"></script>
+    <script src="js/slider/main.js"></script>
+
+    <script src="https://kit.fontawesome.com/17c3bf4af0.js" crossorigin="anonymous"></script>
+
+    <title>Argal Ingenieros Constructores Edificios </title>
+
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input[type=checkbox]').live('click', function () {
+                var parent = $(this).parent().attr('id');
+                $('#' + parent + ' input[type=checkbox]').removeAttr('checked');
+                $(this).attr('checked', 'checked');
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <h2>Comunícate con Nosotros</h2><br>
+    <div class="cajaFormulario">
+        <form action="php/select.php" method="post">
+
+          
+                    <select name="cantidadSelect" >
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select> 
+              <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+
+    </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
